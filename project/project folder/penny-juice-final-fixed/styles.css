@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Montserrat:wght@300;500&display=swap');
+:root{
+  --bg:#fff7f3;
+  --card:#ffffff;
+  --muted:#6b6b6b;
+  --accent:#F97066;
+  --accent-2:#F6A56E;
+  --maxw:1100px;
+  --nav-h:70px;
+  --trans:200ms ease;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Montserrat,system-ui,Arial;background:var(--bg);color:#222;transition:background var(--trans),color var(--trans)}
+body.dark{ --bg:#121214; --card:#131418; --muted:#bfc7cc; --accent:#ffa07a }
+.container{max-width:var(--maxw);margin:0 auto;padding:0 1rem}
+.header{position:sticky;top:0;padding:.6rem 0;z-index:60;height:var(--nav-h);display:flex;align-items:center;background:transparent}
+.nav{display:flex;align-items:center;justify-content:space-between;width:100%}
+.logo img{height:48px}
+.links{display:flex;gap:.5rem;align-items:center}
+.links a{padding:.45rem .7rem;border-radius:8px;color:#4b4b4b;font-weight:600;text-decoration:none}
+.links a.cta{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;padding:.5rem .9rem;border-radius:999px;box-shadow:0 8px 20px rgba(249,112,102,0.12)}
+.controls{display:flex;align-items:center;gap:.5rem}
+.theme-toggle{background:transparent;border:1px solid rgba(0,0,0,.06);padding:.45rem .6rem;border-radius:999px;cursor:pointer}
+.cart-btn{position:relative;background:transparent;border:none;cursor:pointer;padding:.4rem .6rem;border-radius:10px}
+.cart-count{position:absolute;top:-6px;right:-6px;background:var(--accent);color:white;border-radius:999px;padding:2px 7px;font-size:12px;font-weight:700}
+.hamburger{display:none;background:transparent;border:0;padding:.5rem;cursor:pointer}
+.mini-cart{position:absolute;right:0;top:62px;background:var(--card);width:340px;max-width:94vw;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.12);overflow:hidden;transform-origin:top right;opacity:0;transform:scale(.98);pointer-events:none;transition:all var(--trans)}
+.mini-cart.open{opacity:1;transform:scale(1);pointer-events:auto}
+.mini-cart .body{padding:1rem;max-height:320px;overflow:auto}
+.mini-cart .footer{padding:1rem;border-top:1px solid rgba(0,0,0,.04);display:flex;gap:.5rem;justify-content:space-between;align-items:center}
+.hero{display:flex;gap:2rem;align-items:center;padding:3rem 0;background:linear-gradient(180deg, rgba(249,112,102,0.06), rgba(246,165,110,0.02));border-bottom:1px solid rgba(0,0,0,.02)}
+.hero .left{flex:1}
+.hero h1{font-family:Poppins, sans-serif;font-size:2.4rem;margin:0 0 .5rem}
+.hero p{margin:0 0 1rem;color:var(--muted)}
+.hero .cta{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:.75rem 1.1rem;border-radius:999px;color:white;font-weight:700;border:none;cursor:pointer}
+.hero .right{flex:0 0 420px}
+.collage{position:relative;height:300px;border-radius:16px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.06);background:#fff}
+.collage img{position:absolute;width:60%;border-radius:12px;transition:transform .2s ease}
+.collage img.left{left:-30px;top:10px;transform:rotate(-6deg);width:62%}
+.collage img.right{right:-20px;bottom:-10px;transform:rotate(6deg);width:48%}
+.section{padding:2.5rem 0}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:var(--card);padding:1rem;border-radius:12px;border:1px solid rgba(0,0,0,.04);box-shadow:0 10px 30px rgba(0,0,0,.04)}
+.product img{width:100%;border-radius:8px;transition:transform .18s ease}
+.product:hover img{transform:scale(1.04)}
+.form input,.form textarea,.form select{width:100%;padding:.8rem;border-radius:8px;border:1px solid rgba(0,0,0,.06);margin-bottom:.75rem}
+.cart-page{max-width:980px;margin:0 auto;padding:2rem}
+.cart-item{display:flex;gap:1rem;align-items:center;padding:.75rem 0;border-bottom:1px solid rgba(0,0,0,.04)}
+.qty{display:flex;gap:.5rem;align-items:center}
+.qty button{padding:.4rem .6rem;border-radius:6px;border:1px solid rgba(0,0,0,.06);background:transparent;cursor:pointer}
+.checkout-summary{background:var(--card);padding:1rem;border-radius:12px;border:1px solid rgba(0,0,0,.04)}
+@media (max-width:900px){
+  .links{display:none}
+  .hamburger{display:block}
+  .hero{flex-direction:column}
+  .collage{height:220px}
+  .mini-cart{right:10px;top:68px;width:92vw}
+}

@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Shop — Penny Juice</title><link rel="stylesheet" href="styles.css"/></head><body>
+<header class="header">
+  <div class="container nav">
+    <div class="logo"><a href="home.html"><img src="assets/logo.svg" alt="Penny Juice logo" /></a></div>
+    <div id="mobile-links" style="display:none"></div>
+    <nav class="links" aria-label="Main navigation">
+      <a href="home.html" >Home</a>
+      <a href="about.html" >About</a>
+      <a href="faq.html" >FAQ</a>
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+    <div class="controls">
+      <button id="hamburger-btn" class="hamburger" aria-label="Open menu">☰</button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌞</button>
+      <button id="cart-btn" class="cart-btn" aria-label="Open cart"><img src="assets/icon-cart.jpg" style="height:22px;border-radius:6px;"/><span id="cart-count" class="cart-count">0</span></button>
+      <button id="login-link" class="cart-btn" onclick="window.location.href='login.html'"><img src="assets/icon-user.jpg" style="height:22px;border-radius:6px;"/></button>
+    </div>
+    <div id="mini-cart" class="mini-cart"><div class="body" id="mini-cart-body">Loading...</div><div class="footer"><div id="mini-cart-total">₦0</div><div style="display:flex;gap:.5rem"><a href="cart.html" class="cta">View Cart</a><a href="checkout.html" class="cta">Checkout</a></div></div></div>
+  </div>
+</header>
+<main><section class="section"><div class="container"><h1>Shop</h1><div id="shop-grid" class="products" style="margin-top:1rem"></div></div></section><footer class="footer"><div class="container"><div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap"><div>&copy; Penny Juice</div><div>Privacy · Terms</div></div></div></footer></main><script>window.PRODUCTS = [{"id": 1, "slug": "orange-1l", "name": "Orange 1L Concentrate", "price": 1200, "desc": "Zesty citrus flavor kids love.", "image": "assets/prod-orange-1l.jpg"}, {"id": 2, "slug": "apple-1l", "name": "Apple 1L Concentrate", "price": 1200, "desc": "Crisp apple taste, great for lunch.", "image": "assets/prod-apple-1l.jpg"}, {"id": 3, "slug": "grape-1l", "name": "Grape 1L Concentrate", "price": 1200, "desc": "Sweet grape, classroom favorite.", "image": "assets/prod-grape-1l.jpg"}, {"id": 4, "slug": "lemon-1l", "name": "Lemon 1L Concentrate", "price": 1300, "desc": "Bright lemon for a refreshing sip.", "image": "assets/prod-lemon-1l.jpg"}, {"id": 5, "slug": "mango-1l", "name": "Mango 1L Concentrate", "price": 1500, "desc": "Tropical mango, smooth and sweet.", "image": "assets/prod-mango-1l.jpg"}, {"id": 6, "slug": "pineapple-1l", "name": "Pineapple 1L Concentrate", "price": 1400, "desc": "Tangy pineapple, full of sunshine.", "image": "assets/prod-pineapple-1l.jpg"}, {"id": 7, "slug": "strawberry-1l", "name": "Strawberry 1L Concentrate", "price": 1300, "desc": "Classic strawberry \u2014 sweet and fruity.", "image": "assets/prod-strawberry-1l.jpg"}, {"id": 8, "slug": "kiwi-1l", "name": "Kiwi 1L Concentrate", "price": 1500, "desc": "Unique kiwi flavor, slightly tart.", "image": "assets/prod-kiwi-1l.jpg"}, {"id": 9, "slug": "watermelon-1l", "name": "Watermelon 1L Concentrate", "price": 1200, "desc": "Light and juicy watermelon.", "image": "assets/prod-watermelon-1l.jpg"}, {"id": 10, "slug": "passionfruit-1l", "name": "Passionfruit 1L Concentrate", "price": 1600, "desc": "Exotic and aromatic passionfruit.", "image": "assets/prod-passionfruit-1l.jpg"}];</script><script src="script.js"></script></body></html>

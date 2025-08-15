@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Login</title><link rel="stylesheet" href="styles.css"/></head><body>
+<header class="header">
+  <div class="container nav">
+    <div class="logo"><a href="home.html"><img src="assets/logo.svg" alt="Penny Juice logo" /></a></div>
+    <div id="mobile-links" style="display:none"></div>
+    <nav class="links" aria-label="Main navigation">
+      <a href="home.html" >Home</a>
+      <a href="about.html" >About</a>
+      <a href="faq.html" >FAQ</a>
+      <a href="shop.html" >Shop</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+    <div class="controls">
+      <button id="hamburger-btn" class="hamburger" aria-label="Open menu">☰</button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌞</button>
+      <button id="cart-btn" class="cart-btn" aria-label="Open cart"><img src="assets/icon-cart.jpg" style="height:22px;border-radius:6px;"/><span id="cart-count" class="cart-count">0</span></button>
+      <button id="login-link" class="cart-btn" onclick="window.location.href='login.html'"><img src="assets/icon-user.jpg" style="height:22px;border-radius:6px;"/></button>
+    </div>
+    <div id="mini-cart" class="mini-cart"><div class="body" id="mini-cart-body">Loading...</div><div class="footer"><div id="mini-cart-total">₦0</div><div style="display:flex;gap:.5rem"><a href="cart.html" class="cta">View Cart</a><a href="checkout.html" class="cta">Checkout</a></div></div></div>
+  </div>
+</header>
+<main><section class="section"><div class="container"><h1>Login</h1><div class="card form"><form id="login-form"><input id="login-email" type="email" placeholder="Email" required/><input id="login-password" type="password" placeholder="Password" required/><div style="display:flex;justify-content:space-between;align-items:center"><a href="register.html" style="color:var(--muted)">Create account</a><button class="cta" type="submit">Login</button></div></form></div></div></section><footer class="footer"><div class="container"><div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap"><div>&copy; Penny Juice</div><div>Privacy · Terms</div></div></div></footer></main><script src="script.js"></script></body></html>
